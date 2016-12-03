@@ -18,7 +18,7 @@ done
 
 echo "Launch Mining Zcash"
 cd /root/nheqminer/Linux_cmake/nheqminer_cpu; ./nheqminer_cpu \
--l $workeruser -u $workeruser -p $workerpwd -t $cpulim &
+-l $stratum -u $workeruser -p $workerpwd -t $cpulim &
 
 echo "Launch Supervisor"
 /usr/bin/supervisord
