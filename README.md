@@ -2,7 +2,7 @@
 This repo 'Zcash Miner' is optimized for Docker CPU mining.
 Miner use https://github.com/nicehash/nheqminer.git (branch Linux)
 
-##Quick Start
+## Quick Start
 Just launch Docker with env variable :
 ```bash
 docker run -d \
