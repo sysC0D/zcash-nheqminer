@@ -1,0 +1,2 @@
+# zcash-nheqminer
+Zcash Miner 
