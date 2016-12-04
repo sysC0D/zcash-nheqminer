@@ -6,12 +6,7 @@ RUN apt-get update && apt-get install -y \
 		git curl supervisor vim
 
 RUN cd /root \
-	&& git clone -b Linux https://github.com/nicehash/nheqminer.git \
-	&& cd nheqminer/cpu_xenoncat/Linux/asm/ \
-	&& sh assemble.sh \
-	&& cd ../../../Linux_cmake/nheqminer_cpu \
-	&& cmake . \
-	&& make -j $(nproc)
+	&& git clone -b Linux https://github.com/nicehash/nheqminer.git 
 
 COPY src/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 

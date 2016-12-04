@@ -16,6 +16,13 @@ do
         fi
 done
 
+echo "Prepare Mining Zcash"
+cd /root/nheqminer/cpu_xenoncat/Linux/asm/
+sh assemble.sh
+cd ../../../Linux_cmake/nheqminer_cpu \
+cmake .
+make -j $(nproc)
+
 echo "Launch Mining Zcash"
 cd /root/nheqminer/Linux_cmake/nheqminer_cpu; ./nheqminer_cpu \
 -l $stratum -u $workeruser -p $workerpwd -t $cpulim &
