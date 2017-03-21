@@ -3,7 +3,7 @@ MAINTAINER  	sysc0d
 
 RUN apt-get update && apt-get install -y \ 
 		cmake build-essential libboost-all-dev \
-		git curl supervisor vim
+		git curl supervisor
 
 RUN cd /root \
 	&& git clone -b Linux https://github.com/nicehash/nheqminer.git 
